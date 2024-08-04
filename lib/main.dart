@@ -3,8 +3,6 @@ import 'package:provider/provider.dart';
 import 'routes/routes.dart'; // Asegúrate de importar tus rutas
 import 'api/auth_service.dart'; // Importa AuthService
 import 'api/api_service.dart';
-import 'pages/login_page.dart'; // Asegúrate de importar tu página de login
-import 'pages/dashboard_page.dart'; // Asegúrate de importar tu página de dashboard
 
 void main() => runApp(MyApp());
 
