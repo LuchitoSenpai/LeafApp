@@ -31,7 +31,8 @@ class _LoginFormState extends State<LoginForm> {
       final response = await _authService.login(_email, _password);
       if (response != null) {
         print('Login response: $response');
-        Navigator.pushNamed(context, 'dashboard');
+        Navigator.pushNamedAndRemoveUntil(
+            context, 'dashboard', (route) => false);
       } else {
         print('Error al iniciar sesión');
       }

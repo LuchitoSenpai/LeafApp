@@ -11,7 +11,8 @@ class LoginPage extends StatelessWidget {
           logoPath: 'assets/loguito.png',
           buttonText: 'Home',
           onButtonPressed: () {
-            Navigator.pushNamed(context, 'home');
+            Navigator.pushNamedAndRemoveUntil(
+                context, 'home', (route) => false);
           },
         ),
         body: Center(
